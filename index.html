@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>나의 p5.js 작품 목록</title>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+    }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 5px;
+    }
+    .description {
+      color: #444;
+      margin-bottom: 30px;
+    }
+    /* 4분할 그리드 레이아웃 */
+    .project-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* 2열 배치 */
+        grid-template-areas: 
+            "item1 item4"
+            "item2 item3"; /* 요청하신 배치 순서 */
+        gap: 30px;
+        max-width: 900px;
+        margin: 0 auto; /* 중앙 정렬 */
+    }
+    .project-section {
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    #item1 { grid-area: item1; }
+    #item4 { grid-area: item4; }
+    #item2 { grid-area: item2; }
+    #item3 { grid-area: item3; }
+
+    h2 {
+        font-size: 22px;
+        color: #1a73e8;
+        margin: 0 0 10px 0;
+    }
+    .preview-link {
+        display: inline-block;
+        margin-top: 10px;
+        font-size: 16px;
+        color: #0b5fa5;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .preview-link:hover {
+        text-decoration: underline;
+    }
+    .link-icon {
+        vertical-align: middle;
+        margin-right: 5px;
+        color: #1a73e8;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>나의 p5.js 작품</h1>
+  <div class="description">
+    아래 링크를 클릭하여 다양한 P5.js 프로그램을 감상하세요.
+  </div>
+
+  <div class="project-list">
+            <div class="project-section" id="item1">
+    <h2>과제 #1: 정적인 밤의 성당</h2>
+    <p>
+      고요한 밤하늘 아래 정적으로 서 있는 성당 그림입니다. (캔버스 크기: 600x400)
+    </p>
+    <a href="sketch1.html" target="_blank" class="preview-link">
+      <span class="link-icon">🔗</span> 프로젝트 1 보기
+    </a>
+      </div>
+
+            <div class="project-section" id="item4">
+    <h2>과제 #4: 애니메이션 밤의 성당</h2>
+    <p>
+      별빛, 창문, 십자가가 움직이는 애니메이션 성당 스케치입니다. (캔버스 크기: 400x266)
+    </p>
+    <a href="sketch4.html" target="_blank" class="preview-link">
+      <span class="link-icon">🔗</span> 프로젝트 4 보기
+    </a>
+      </div>
+
+            <div class="project-section" id="item2">
+    <h2>과제 #2: 자신의 캐리커처를 그려보자</h2>
+    <p>
+      자신의 캐리커처를 그려보자. (캔버스 크기: 600x400)
+    </p>
+    <a href="sketch2.html" target="_blank" class="preview-link">
+      <span class="link-icon">🔗</span> 프로젝트 2 보기
+    </a>
+      </div>
+      
+            <div class="project-section" id="item3">
+    <h2>과제 #3: [제목 미정]</h2>
+    <p>
+      아직 내용이 정의되지 않은 임시 스케치입니다. (기본 화면 표시)
+    </p>
+    <a href="sketch3.html" target="_blank" class="preview-link">
+      <span class="link-icon">🔗</span> 프로젝트 3 보기
+    </a>
+      </div>
+  </div>
+
+</body>
+</html>
